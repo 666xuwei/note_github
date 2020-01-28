@@ -224,7 +224,7 @@ public class UserMapperTest {
 
 #### （9）运行测试
 
-![1](images\1.png)
+![1](./images/1.png)
 
 #### （10）出现问题解决
 
