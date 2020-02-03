@@ -1,0 +1,71 @@
+[TOC]
+
+## 为什么需要 Collection
+
+1. Java 是一门面向对象的语言，免不了要处理对象。
+2. 为了方便的操作多个对象，就需要把这些对象存储起来。
+3. 想要存储多个对象(变量)，很容易就能想到一个 **容器** 。
+4. 常用的容器有 **StringBuffered、数组(虽然有对象数组，但是数组长度不可变)**等。
+5. 所以，Java 就为我们提供了集合（Collection）。
+
+## 数组和集合的区别
+
+- 长度的区别
+
+- - **数组的长度固定**
+    - **集合的长度可变**
+
+- 内容不同
+
+- - 数组存储的是同一种类型的元素。
+    - 集合可以存储不同类型的元素（一般不建议）。
+
+- 元素的数据类型不同
+
+- - **数组可以存储基本数据类型，也可以存储引用数据类型。**
+    - **集合只能存储引用类型（虽然存储的是简单的int，它会自动装箱成Integer）。**
+
+## Collection 接口
+
+### 1、概述
+
+Collection 接口是单个集合保存的最大父接口，定义如下：
+
+```java
+public interface Collection<E> extends Iterable<E>
+```
+
+### 2、常用方法
+
+```java
+public boolean add(E e);  
+public boolean addAll(Collection<? extends E> c);
+public void clear(); 
+public boolean contains(Object o);
+public boolean remove(Object o);
+public int size();
+public Object[] toArray();  //将集合变为对象数组
+public Iterator<E> iterator(); //取得 Iterator 接口对象
+```
+
+**注意** ：使用 Collection 接口的实现类对象存储元素，其元素所在类必须重写 equals() 方法。
+
+**原因** ：
+
+当我们使用 contains() 方法时，会将方法中的对象与集合中的元素一个一个比较，比如我使用 contains() 方法来判断对象是否存在于集合，coll.contains(new Person("weishao",23));会调用这个 person 对象的 equals() 方法与集合中的每个元素进行比较，如果当前元素没有找到，会一直比较到集合最后一个元素。
+
+### 3、集合遍历
+
+通过调用 iterator() 这个方法，返回的是 Iterator 接口对象。
+
+集合对象每次调用 iterator() 方法都会得到一个全新的迭代器对象，默认游标都在集合的第一个元素之前，然后我们会调用迭代器的hasNext()方法来判断当前集合是否有下一个元素，如果有，使用next()方法进行获取。
+
+![image.png](../../imgs/1575967195052-acba613d-8a11-4008-9304-86fcf7765e30.png)
+
+**注意：**
+
+删除集合元素一般先使用 equals() 方法获取要删除的对象，不能再迭代器中调用 next() 方法之前删除，也不能在迭代器中删除两遍，两者都会报错：IllegalStateException。
+
+### 4、增强 for 循环
+
+在 JDK1.5 之后新增 foreach 循环，用于遍历集合和数组。但是一般我们使用 **迭代器** 来遍历集合，使用 **普通 for 循环** 遍历数组，增强 for 都可以使用。
