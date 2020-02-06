@@ -1,3 +1,5 @@
+[TOC]
+
 ## 一、运行错误
 
 - 出现无效的目标发行版13
@@ -8,13 +10,7 @@
 
 - alt+Delete：快速查找jar包
 
-
-
-
-
-# Idea
-
-## 1. Idea 配置
+## 三、Idea 配置
 
 #### 1、配置项目选择界面
 
@@ -28,15 +24,11 @@ file--->setting---->Appearance & Behavior --- System Settings --- reopon last pr
 
 #### 2、配置 Maven
 
-
-
 ![image.png](../../imgs/1579057960396-dc758e7a-495d-44c7-a8cf-73783642dc5c.png)
 
 
 
 #### 3、设置鼠标滚轮修改字体大小
-
-
 
 ![image.png](../../imgs/1579066998900-0801327e-c44d-4668-a02d-7d6e1485f358.png)
 
@@ -44,63 +36,29 @@ file--->setting---->Appearance & Behavior --- System Settings --- reopon last pr
 
 #### 4、**设置鼠标悬浮提示**
 
-**
-**
-
 **![image.png](../../imgs/1579067087694-de6e14f7-eda4-4192-adb1-31da96773712.png)**
 
-**
-**
+
 
 #### 5、**设置自动导包功能**
 
-**
-**
-
 **![image.png](../../imgs/1579067135058-10fd6e4b-7486-48e1-9f5f-dafda810a3ae.png)**
-
-**
-**
 
 #### 6、**设置显示行号和方法间的分隔符**
 
-**
-**
-
 **![image.png](../../imgs/1579067177533-824e9c52-e0ae-42fc-9bcb-8d69e3c0ee02.png)**
-
-**
-**
 
 #### 7、**忽略大小写提示**
 
-**
-**
-
 **![image.png](../../imgs/1579067213178-16d546a9-e29f-4a84-9d93-fed0f665cfc4.png)**
-
-**
-**
 
 #### 8、**设置取消单行tabs的操作**
 
-**
-**
-
 **![image.png](../../imgs/1579067323716-7bd90b7e-8ce1-4d02-8e1b-e51def4beb1a.png)**
-
-**
-**
 
 #### 9、**设置项目文件编码**
 
-**
-**
-
 **![image.png](../../imgs/1579067486917-be8fca00-e3f7-4825-bd73-f99e204c6d40.png)**
-
-**
-**
 
 #### 10、添加自定义快捷键
 
@@ -108,15 +66,9 @@ file--->setting---->Appearance & Behavior --- System Settings --- reopon last pr
 2. 在组中添加方法快捷键
 3. 在Template text 中添加原方法。
 
-
-
 ![image.png](../../imgs/1579068245614-9887eec5-a23e-47c4-92e3-7de7cb470996.png)
 
-
-
 #### 11、设置自动编译
-
-
 
 ![image.png](../../imgs/1579069384968-d67ddc7c-3213-4aa1-8263-e019f8b7cd62.png)
 
@@ -134,39 +86,23 @@ file--->setting---->Appearance & Behavior --- System Settings --- reopon last pr
 
 
 
-## 2. Idea 插件安装
+## 四、Idea 插件安装
 
 #### 1、代码检查：Alibaba Cloud Toolkit
 
-
-
 #### 2、快捷键提示：Key Promoter X
-
-
 
 #### 3、RainBow Brackets（彩虹括号）
 
-
-
 #### 4、自定义日志颜色：Grep console
-
-
 
 #### 5、让 mybatis 向 java 代码一样编辑：Free Mybatis plugin
 
-
-
 #### 6、Maven Helper
-
-
 
 #### 7、mybatiscodehelp：强大的mybatis插件
 
-
-
 #### 8、关闭自带的插件
-
-
 
 ![image.png](../../imgs/1579068570708-3af8c3cb-f63b-43a8-90f5-619ad9dd7f0c.png)![image.png](../../imgs/1579068591260-bfc8235b-d03f-46c4-a4b2-0f0fac39bbc7.png)
 
